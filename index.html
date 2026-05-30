@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Devagudi Jagadeeswar Reddy | Full Stack & AI Developer Portfolio</title>
+  <meta name="title" content="Devagudi Jagadeeswar Reddy | Full Stack & AI Developer Portfolio">
+  <meta name="description"
+    content="Professional portfolio of Devagudi Jagadeeswar Reddy, a motivated Full Stack & AI Developer specializing in React, FastAPI, Python, Machine Learning, and NLP.">
+  <meta name="keywords"
+    content="Devagudi Jagadeeswar Reddy, Jagadeeswar Reddy, Full Stack & AI Developer, AI Developer, Portfolio, FastAPI, React Developer, Python Developer, Raktsetu, Machine Learning">
+  <meta name="author" content="Devagudi Jagadeeswar Reddy">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourportfolio.dev/">
+  <meta property="og:title" content="Devagudi Jagadeeswar Reddy | Full Stack & AI Developer Portfolio">
+  <meta property="og:description"
+    content="Discover modern full-stack web applications, intelligent AI models, and scalable architectures engineered by Devagudi Jagadeeswar Reddy.">
+  <meta property="og:image" content="assets/raktsetu.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourportfolio.dev/">
+  <meta property="twitter:title" content="Devagudi Jagadeeswar Reddy | Full Stack & AI Developer Portfolio">
+  <meta property="twitter:description"
+    content="Discover modern full-stack web applications, intelligent AI models, and scalable architectures engineered by Devagudi Jagadeeswar Reddy.">
+  <meta property="twitter:image" content="assets/raktsetu.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Scroll Depth Progress Ribbon -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- HEADER / STICKY NAVIGATION -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="logo">
+        <div class="logo-badge">DJ</div> <span>JAGADEESWAR</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="assets/resume.pdf" download="Devagudi_Jagadeeswar_Reddy_Resume.pdf" target="_blank"
+          class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="fa-solid fa-download"></i>
+          Download CV</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <canvas id="hero-particle-canvas"></canvas>
+      <div class="hero-content reveal active">
+        <div class="hero-welcome">
+          <span>👋 Hello, I'm</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Devagudi Jagadeeswar Reddy<br>
+          <span style="color: var(--accent-primary);" id="typed-text"></span><span class="typewriter-cursor">|</span>
+        </h1>
+        <p class="hero-tagline">
+          Final-year Computer Science (AI) student passionate about Artificial Intelligence, Full Stack Development, and
+          building impactful technology solutions. Experienced in developing AI-powered applications and scalable web
+          platforms.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="assets/resume.pdf" download="Devagudi_Jagadeeswar_Reddy_Resume.pdf" target="_blank"
+            class="btn btn-secondary">Download Resume <i class="fa-solid fa-file-pdf"></i></a>
+        </div>
+
+        <div class="connect-heading">Connect with me</div>
+        <div class="hero-social-list">
+          <a href="https://www.linkedin.com/in/jagadeeswar-reddy-484343339/" target="_blank" class="hero-social-btn"
+            aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/jagadeeswarreddy919" target="_blank" class="hero-social-btn"
+            aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+          <a href="https://leetcode.com/u/jagadeeswarreddydevagudi/" target="_blank" class="hero-social-btn"
+            aria-label="LeetCode Profile"><i class="fa-solid fa-code"></i></a>
+          <a href="mailto:jagadeeswarreddy919@gmail.com" class="hero-social-btn" aria-label="Email Me"><i
+              class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal active">
+        <div class="hero-profile-container">
+          <div class="profile-decorative-circle"></div>
+          <div class="profile-avatar-frame">
+            <img src="assets/profile.jpg" alt="Devagudi Jagadeeswar Reddy" class="profile-avatar-img">
+          </div>
+          <!-- Floating decorative icons -->
+          <div class="floating-decoration float-1"><i class="fa-solid fa-code"></i></div>
+          <div class="floating-decoration float-2"><i class="fa-solid fa-brain"></i></div>
+          <div class="floating-decoration float-3">✕</div>
+          <div class="floating-decoration float-4">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="glass-card about-card reveal">
+        <div class="about-columns-grid">
+          <!-- Left Column -->
+          <div class="about-left-col">
+            <div>
+              <div class="about-title-block">
+                <i class="fa-solid fa-user"></i> About Me
+              </div>
+              <p class="about-narrative">
+                Motivated Computer Science (AI) student with strong interests in Artificial Intelligence, Full Stack
+                Development, and emerging technologies. Passionate about creating intelligent systems that solve
+                real-world problems. Strong foundation in software engineering, machine learning, cloud technologies,
+                and scalable application development.
+              </p>
+            </div>
+
+            <div>
+              <div class="info-mini-grid">
+                <div class="info-card">
+                  <div class="info-label">Name</div>
+                  <div class="info-val">Devagudi Jagadeeswar Reddy</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-label">Education</div>
+                  <div class="info-val">B.Tech CSE (AI)</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-label">University</div>
+                  <div class="info-val">Parul University</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-label">CGPA</div>
+                  <div class="info-val">6.9 / 10</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-label">Location</div>
+                  <div class="info-val">India</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-label">Focus</div>
+                  <div class="info-val">AI & Full Stack</div>
+                </div>
+              </div>
+              <a href="mailto:jagadeeswarreddy919@gmail.com" class="btn btn-secondary"><i
+                  class="fa-solid fa-user-tie"></i> More About Me <i class="fa-solid fa-chevron-right"
+                  style="font-size: 0.7rem;"></i></a>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="about-right-col">
+            <h3 class="what-i-do-title">What I Do</h3>
+            <div class="what-i-do-list">
+              <div class="do-card">
+                <div class="do-icon"><i class="fa-solid fa-desktop"></i></div>
+                <div class="do-details">
+                  <h4>Frontend Development</h4>
+                  <p>Building responsive, pixel-perfect, and interactive user interfaces using modern React framework
+                    and Tailwind CSS.</p>
+                </div>
+              </div>
+              <div class="do-card">
+                <div class="do-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="do-details">
+                  <h4>Backend Development</h4>
+                  <p>Creating robust, high-performance APIs and secure server-side logic using FastAPI, Python, and
+                    RESTful architectures.</p>
+                </div>
+              </div>
+              <div class="do-card">
+                <div class="do-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="do-details">
+                  <h4>AI & Machine Learning</h4>
+                  <p>Developing intelligent NLP applications, compatibility matching engines, and predictive ML
+                    classification pipelines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="skills-columns-grid">
+        <!-- Left Card: Technical Skills -->
+        <div class="glass-card skills-wrapper-card reveal">
+          <h3 class="skills-subtitle"><i class="fa-solid fa-laptop-code"></i> Technical Skills</h3>
+
+          <div class="skills-horizontal-filter">
+            <button class="skills-pill-btn active" onclick="filterSkills('all')">All</button>
+            <button class="skills-pill-btn" onclick="filterSkills('programming')">Programming</button>
+            <button class="skills-pill-btn" onclick="filterSkills('frontend')">Frontend</button>
+            <button class="skills-pill-btn" onclick="filterSkills('backend')">Backend</button>
+            <button class="skills-pill-btn" onclick="filterSkills('ai')">AI/ML</button>
+            <button class="skills-pill-btn" onclick="filterSkills('cloud')">Cloud</button>
+          </div>
+
+          <div class="tech-skills-layout" id="skills-container">
+            <div class="tech-skill-icon-card" data-category="programming">
+              <div class="tech-skill-icon-box" style="color: #3776AB;"><i class="fa-brands fa-python"></i></div>
+              <span class="tech-skill-name">Python</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="programming">
+              <div class="tech-skill-icon-box" style="color: #F7DF1E;"><i class="fa-brands fa-js"></i></div>
+              <span class="tech-skill-name">JavaScript</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="programming">
+              <div class="tech-skill-icon-box" style="color: #336791;"><i class="fa-solid fa-database"></i></div>
+              <span class="tech-skill-name">SQL</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="frontend">
+              <div class="tech-skill-icon-box" style="color: #E34F26;"><i class="fa-brands fa-html5"></i></div>
+              <span class="tech-skill-name">HTML</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="frontend">
+              <div class="tech-skill-icon-box" style="color: #1572B6;"><i class="fa-brands fa-css3-alt"></i></div>
+              <span class="tech-skill-name">CSS</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="frontend">
+              <div class="tech-skill-icon-box" style="color: #61DAFB;"><i class="fa-brands fa-react"></i></div>
+              <span class="tech-skill-name">React</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="backend">
+              <div class="tech-skill-icon-box" style="color: #008080;"><i class="fa-solid fa-server"></i></div>
+              <span class="tech-skill-name">FastAPI</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="backend">
+              <div class="tech-skill-icon-box" style="color: #2563EB;"><i class="fa-solid fa-gears"></i></div>
+              <span class="tech-skill-name">REST APIs</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="ai">
+              <div class="tech-skill-icon-box" style="color: #8B5CF6;"><i class="fa-solid fa-brain"></i></div>
+              <span class="tech-skill-name">Machine Learning</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="ai">
+              <div class="tech-skill-icon-box" style="color: #6366F1;"><i class="fa-solid fa-comments"></i></div>
+              <span class="tech-skill-name">NLP</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="ai">
+              <div class="tech-skill-icon-box" style="color: #EC4899;"><i class="fa-solid fa-robot"></i></div>
+              <span class="tech-skill-name">Generative AI</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="cloud">
+              <div class="tech-skill-icon-box" style="color: #FF9900;"><i class="fa-brands fa-aws"></i></div>
+              <span class="tech-skill-name">AWS</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="cloud">
+              <div class="tech-skill-icon-box" style="color: #F05032;"><i class="fa-brands fa-git-alt"></i></div>
+              <span class="tech-skill-name">Git</span>
+            </div>
+            <div class="tech-skill-icon-card" data-category="cloud">
+              <div class="tech-skill-icon-box" style="color: #336791;"><i class="fa-solid fa-table"></i></div>
+              <span class="tech-skill-name">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Card: Core ECE Knowledge -->
+        <div class="glass-card skills-wrapper-card reveal">
+          <h3 class="skills-subtitle"><i class="fa-solid fa-microchip"></i> Core ECE Knowledge</h3>
+
+          <div class="soft-skills-grid">
+            <div class="soft-skill-badge">Communication Signals</div>
+            <div class="soft-skill-badge">Digital Electronics</div>
+            <div class="soft-skill-badge">Circuit Design</div>
+            <div class="soft-skill-badge">Microprocessors & Microcontrollers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects">
+      <div class="projects-header-wrapper reveal">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <a href="#contact" class="view-all-projects-link">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="projects-three-grid reveal">
+        <!-- Project 1: RaktSetu -->
+        <div class="card-project-card glass-card">
+          <div class="card-project-img-wrapper">
+            <img src="assets/raktsetu.png" alt="Raktsetu AI Donor Matching Platform UI" class="card-project-img">
+            <span class="card-project-overlay-link" onclick="openProjectModal('raktsetu')"
+              aria-label="Explore Raktsetu Project Details"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="card-project-body">
+            <h3 class="card-project-title">RaktSetu matching portal</h3>
+            <p class="card-project-description">
+              An AI-powered system connecting blood donors and recipients using advanced compatibility matching.
+              Implemented NLP-based urgency classification, real-time donor search, and live notifications.
+            </p>
+            <div class="card-project-tags-row" style="margin-top: auto;">
+              <span class="project-tag-pill">Python</span>
+              <span class="project-tag-pill">FastAPI</span>
+              <span class="project-tag-pill">React</span>
+              <span class="project-tag-pill">PostgreSQL</span>
+              <span class="project-tag-pill">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Skill Analyzer -->
+        <div class="card-project-card glass-card">
+          <div class="card-project-img-wrapper">
+            <img src="assets/skillanalyzer.png" alt="AI-Driven Skill Gap Analyzer UI" class="card-project-img">
+            <span class="card-project-overlay-link" onclick="openProjectModal('skillanalyzer')"
+              aria-label="Explore Skill Gap Analyzer Details"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </div>
+          <div class="card-project-body">
+            <h3 class="card-project-title">Skill Gap Analyzer</h3>
+            <p class="card-project-description">
+              AI platform mapping gaps between user resumes and target job profiles. Features machine learning ranking,
+              custom course recommendation engines, and high-speed NLP resume parser pipelines.
+            </p>
+            <div class="card-project-tags-row" style="margin-top: auto;">
+              <span class="project-tag-pill">Python</span>
+              <span class="project-tag-pill">AWS</span>
+              <span class="project-tag-pill">ML</span>
+              <span class="project-tag-pill">NLP</span>
+              <span class="project-tag-pill">Full Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="glass-card timeline-card-wrapper reveal">
+        <div class="section-header" style="margin-bottom: 0.5rem; text-align: left;">
+          <h2 class="section-title"><i class="fa-solid fa-briefcase"
+              style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Experience</h2>
+        </div>
+
+        <div class="timeline-horizontal-container">
+          <!-- Central Horizontal Line -->
+          <div class="timeline-horizontal-line"></div>
+          <div class="timeline-horizontal-progress"></div>
+
+          <div class="timeline-single-experience">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-experience-body">
+              <span class="milestone-date">Nov 2023 – May 2024</span>
+              <h3 class="milestone-title">Quality Check Intern</h3>
+              <span class="milestone-company">Vikram Solar Pvt. Ltd.</span>
+              <ul style="list-style: none; margin-top: 0.5rem;">
+                <li style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.3rem;"><i
+                    class="fa-solid fa-circle-check"
+                    style="color: var(--accent-primary); font-size: 0.8rem; margin-right: 0.4rem;"></i> Quality
+                  inspection and testing of solar panels</li>
+                <li style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.3rem;"><i
+                    class="fa-solid fa-circle-check"
+                    style="color: var(--accent-primary); font-size: 0.8rem; margin-right: 0.4rem;"></i> ISO compliance
+                  verification and testing reporting</li>
+                <li style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.3rem;"><i
+                    class="fa-solid fa-circle-check"
+                    style="color: var(--accent-primary); font-size: 0.8rem; margin-right: 0.4rem;"></i> Dashboard
+                  reporting and quality sheets using Excel</li>
+                <li style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.3rem;"><i
+                    class="fa-solid fa-circle-check"
+                    style="color: var(--accent-primary); font-size: 0.8rem; margin-right: 0.4rem;"></i> Production
+                  process compliance defect-reduction analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <div class="section-header reveal">
+        <span class="section-tag">Learning Path</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-cards-grid reveal">
+        <!-- University -->
+        <div class="edu-vertical-card glass-card">
+          <div class="edu-card-top">
+            <h3 style="color: var(--accent-primary);"><i class="fa-solid fa-graduation-cap"></i> Parul University</h3>
+            <p>B.Tech Computer Science Engineering (AI)</p>
+          </div>
+          <div class="edu-card-bottom">
+            <span class="edu-date-badge">2024 – 2027</span>
+            <span class="edu-score-badge">CGPA: 6.9</span>
+          </div>
+        </div>
+
+        <!-- Diploma -->
+        <div class="edu-vertical-card glass-card">
+          <div class="edu-card-top">
+            <h3 style="color: var(--accent-primary);"><i class="fa-solid fa-microchip"></i> S.V. Govt. Polytechnic
+              College, Tirupati</h3>
+            <p>Diploma in Electronics & Communication Eng.</p>
+          </div>
+          <div class="edu-card-bottom">
+            <span class="edu-date-badge">Completed</span>
+            <span class="edu-score-badge">Score: 75%</span>
+          </div>
+        </div>
+
+        <!-- School -->
+        <div class="edu-vertical-card glass-card">
+          <div class="edu-card-top">
+            <h3 style="color: var(--accent-primary);"><i class="fa-solid fa-school"></i> Keshava Reddy EM High School,
+              Andhra Pradesh</h3>
+            <p>SSC (10th Grade)</p>
+          </div>
+          <div class="edu-card-bottom">
+            <span class="edu-date-badge">Completed</span>
+            <span class="edu-score-badge">CGPA: 10</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+      <div class="section-header reveal">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="certs-grid reveal">
+        <!-- Cert 1 -->
+        <div class="cert-item-card glass-card">
+          <div class="cert-icon-box"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-details-box">
+            <h4>Generative AI Fundamentals</h4>
+            <p>Coursera</p>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-item-card glass-card">
+          <div class="cert-icon-box"><i class="fa-brands fa-aws"></i></div>
+          <div class="cert-details-box">
+            <h4>AWS Cloud Computing Basics</h4>
+            <p>AWS Academy</p>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-item-card glass-card">
+          <div class="cert-icon-box"><i class="fa-solid fa-brain"></i></div>
+          <div class="cert-details-box">
+            <h4>Machine Learning with Python</h4>
+            <p>IBM / Coursera</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LET'S CONNECT SECTION -->
+    <section id="contact">
+      <div class="glass-card connect-card reveal">
+        <div class="connect-columns-grid">
+          <!-- Left Column -->
+          <div class="connect-left-col">
+            <div>
+              <div class="about-title-block" style="margin-bottom: 0.5rem; font-size: 1.6rem;">
+                <i class="fa-solid fa-paper-plane"></i> Let's Build Something Amazing Together
+              </div>
+              <p class="about-narrative" style="margin-bottom: 1.5rem; font-size: 0.9rem;">
+                Have an AI application idea, a full-stack requirement, or want to explore collaboration? Reach out to
+                me! I am open to exciting career roles, internships, or interesting technology consultings.
+              </p>
+            </div>
+
+            <div>
+              <div class="connect-detail-item">
+                <div class="connect-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="connect-detail-text">
+                  <h4>Email</h4>
+                  <p>jagadeeswarreddy919@gmail.com</p>
+                </div>
+              </div>
+              <div class="connect-detail-item">
+                <div class="connect-detail-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="connect-detail-text">
+                  <h4>Phone</h4>
+                  <p>+91 9885934850</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-social-list" style="margin-top: 1rem;">
+              <a href="https://www.linkedin.com/in/jagadeeswar-reddy-484343339/" target="_blank" class="hero-social-btn"
+                aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/jagadeeswarreddy919" target="_blank" class="hero-social-btn"
+                aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+              <a href="https://leetcode.com/u/jagadeeswarreddydevagudi/" target="_blank" class="hero-social-btn"
+                aria-label="LeetCode Profile"><i class="fa-solid fa-code"></i></a>
+            </div>
+          </div>
+
+          <!-- Right Column Contact Form -->
+          <div>
+            <form class="connect-form-layout" id="portfolio-contact-form" novalidate>
+              <div class="connect-form-row">
+                <input type="text" id="form-name" class="connect-input-box" placeholder="Your Name" required>
+                <input type="email" id="form-email" class="connect-input-box" placeholder="Your Email" required>
+              </div>
+              <input type="text" id="form-subject" class="connect-input-box" placeholder="Subject" required>
+              <textarea id="form-message" class="connect-input-box" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn-primary"
+                style="align-self: flex-end; justify-content: center; width: 160px;">
+                Send Message <i class="fa-solid fa-paper-plane" style="font-size: 0.8rem;"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-copy">
+      Devagudi Jagadeeswar Reddy &copy; 2026
+    </p>
+
+    </p>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="back-to-top-btn" onclick="scrollToTop()" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- CUSTOM PORTFOLIO DETAILED CASE STUDY MODALS -->
+  <div class="modal-overlay" id="project-modal" onclick="closeProjectModalOnBackdrop(event)">
+    <div class="modal-content glass-card">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close Case Study Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="modal-img" src="" alt="Project Showcase Image" class="modal-header-img">
+      <div class="modal-body">
+        <div class="modal-tags" id="modal-tags">
+          <!-- Populated dynamically -->
+        </div>
+        <h3 class="modal-title" id="modal-title">Project Case Study</h3>
+        <p class="modal-description" id="modal-description">
+          Detailed case study text goes here...
+        </p>
+        <div class="modal-highlights">
+          <h4>Key Features & Architectures</h4>
+          <ul id="modal-highlights-list">
+            <!-- Populated dynamically -->
+          </ul>
+        </div>
+        <div class="modal-buttons">
+          <a id="modal-github-link" href="#" target="_blank" class="btn btn-secondary"><i
+              class="fa-brands fa-github"></i> Repository</a>
+          <a id="modal-live-link" href="#" target="_blank" class="btn btn-primary"><i
+              class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Validation Toast Popup -->
+  <div class="toast-notification" id="toast-success">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Message delivered successfully!</span>
+  </div>
+
+  <!-- Custom Dual-Ring Cursor -->
+  <div id="custom-cursor-dot"></div>
+  <div id="custom-cursor-ring"></div>
+
+  <!-- JavaScript Core -->
+  <script src="script.js"></script>
+</body>
+
+</html>
