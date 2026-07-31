@@ -597,4 +597,73 @@ document.addEventListener('DOMContentLoaded', () => {
     animateParticles();
   }
 
+  // =========================================
+  // EMAILJS CONTACT FORM INTEGRATION
+  // =========================================
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('toast-success');
+    if (!toast) return;
+    const toastText = toast.querySelector('span');
+    const toastIcon = toast.querySelector('i');
+
+    if (toastText) toastText.textContent = message;
+    if (toastIcon) {
+      toastIcon.className = isError ? 'fa-solid fa-circle-xmark' : 'fa-solid fa-circle-check';
+      toastIcon.style.color = isError ? '#ef4444' : 'var(--accent-success)';
+    }
+
+    toast.classList.add('active');
+    setTimeout(() => {
+      toast.classList.remove('active');
+    }, 4000);
+  }
+
+  const contactForm = document.getElementById('portfolio-contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('form-name');
+      const emailInput = document.getElementById('form-email');
+      const subjectInput = document.getElementById('form-subject');
+      const messageInput = document.getElementById('form-message');
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+      const subject = subjectInput ? subjectInput.value.trim() : '';
+      const message = messageInput ? messageInput.value.trim() : '';
+
+      if (!name || !email || !message) {
+        showToast('Please fill out all required fields.', true);
+        return;
+      }
+
+      const originalBtnHtml = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin" style="font-size: 0.8rem;"></i>';
+
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        reply_to: email,
+        subject: subject || 'New Contact Form Submission',
+        message: message
+      };
+
+      emailjs.send('service_xjr4g2v', 'template_fqckfif', templateParams)
+        .then(function () {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+          contactForm.reset();
+          showToast('Message sent successfully!');
+        }, function (error) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+          showToast('Failed to send message. Please try again.', true);
+          console.error('EmailJS error:', error);
+        });
+    });
+  }
+
 });
