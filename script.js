@@ -213,11 +213,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 8. CASE STUDY DETAILED MODAL DATA
   // =========================================
   const projectDatabase = {
-    raktsetu: {
-      title: "RaktSetu — Blood Donor Matching Platform",
+    onedrop: {
+      title: "OneDrop — Blood Donor Matching Platform",
       tags: ["Python", "FastAPI", "React", "PostgreSQL", "NLP", "Machine Learning"],
-      image: "assets/raktsetu.png",
-      description: "RaktSetu is a premium, AI-powered system designed to connect blood donors and recipients using advanced compatibility matching metrics. Features robust NLP urgency classification models to parse text inputs, real-time geolocation matching searches, and highly secure role controls built with FastAPI and React.",
+      image: "assets/onedrop.png",
+      description: "OneDrop is a premium, AI-powered system designed to connect blood donors and recipients using advanced compatibility matching metrics. Features robust NLP urgency classification models to parse text inputs, real-time geolocation matching searches, and highly secure role controls built with FastAPI and React.",
       highlights: [
         "Programmed intelligent AI compatibility donor-recipient matching models.",
         "Implemented NLP classification layers to categorize text-based requests by urgency parameters.",
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "Constructed dynamic dashboard triggers and real-time live alert notification alerts."
       ],
       github: "https://github.com/jagadeeswarreddy919",
-      live: "https://raktsetu-india.vercel.app/"
+      live: "https://onedrop-india.vercel.app"
     },
     skillanalyzer: {
       title: "AI-Driven Skill Gap Analyzer & Learning Recommender",
