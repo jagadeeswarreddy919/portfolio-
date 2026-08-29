@@ -879,8 +879,8 @@ section {
 
 .projects-three-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 grid items because we have 2 main software projects */
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
 }
 
 .card-project-card {

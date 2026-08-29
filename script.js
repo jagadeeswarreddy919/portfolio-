@@ -213,11 +213,39 @@ document.addEventListener('DOMContentLoaded', () => {
   // 8. CASE STUDY DETAILED MODAL DATA
   // =========================================
   const projectDatabase = {
-    onedrop: {
-      title: "OneDrop — Blood Donor Matching Platform",
+    resolvex: {
+      title: "ResolveX — AI Risk & Payment Failure Resolution Platform",
+      tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "AI Risk Engine", "Razorpay APIs"],
+      image: "assets/resolvex.png",
+      description: "ResolveX is an intelligent payment failure tracking and resolution platform engineered for Razorpay Buildathon 2026 (Track 2: AI Risk Manager). It resolves customer uncertainty and anxiety surrounding failed/pending payments by automatically verifying bank debits, triaging double-debit risks, auto-generating dispute complaints, and tracing real-time stage-by-stage interbank settlements.",
+      highlights: [
+        "Architected real-time failure investigation pipelines with stage-by-stage interbank audit trails (Customer Bank -> NPCI -> Payment Gateway -> Merchant).",
+        "Engineered automated complaint ticket generation and instant acknowledgment (ACK) tracking.",
+        "Implemented proactive Double Deduction Risk warnings and AI-assisted support triage.",
+        "Crafted a high-performance modern UI with live status visualizers and simulated payment settlement scenarios."
+      ],
+      github: "https://github.com/jagadeeswarreddy919",
+      live: "https://razorpay-mini-project.vercel.app/"
+    },
+    raktsetu: {
+      title: "RaktSetu — AI Blood Donor Matching Platform",
       tags: ["Python", "FastAPI", "React", "PostgreSQL", "NLP", "Machine Learning"],
-      image: "assets/onedrop.png",
-      description: "OneDrop is a premium, AI-powered system designed to connect blood donors and recipients using advanced compatibility matching metrics. Features robust NLP urgency classification models to parse text inputs, real-time geolocation matching searches, and highly secure role controls built with FastAPI and React.",
+      image: "assets/raktsetu.png",
+      description: "RaktSetu is a premium, AI-powered system designed to connect blood donors and recipients using advanced compatibility matching metrics. Features robust NLP urgency classification models to parse text inputs, real-time geolocation matching searches, and highly secure role controls built with FastAPI and React.",
+      highlights: [
+        "Programmed intelligent AI compatibility donor-recipient matching models.",
+        "Implemented NLP classification layers to categorize text-based requests by urgency parameters.",
+        "Engineered real-time database queries on normalized PostgreSQL structures.",
+        "Constructed dynamic dashboard triggers and real-time live alert notification alerts."
+      ],
+      github: "https://github.com/jagadeeswarreddy919",
+      live: "https://onedrop-india.vercel.app"
+    },
+    onedrop: {
+      title: "RaktSetu — AI Blood Donor Matching Platform",
+      tags: ["Python", "FastAPI", "React", "PostgreSQL", "NLP", "Machine Learning"],
+      image: "assets/raktsetu.png",
+      description: "RaktSetu is a premium, AI-powered system designed to connect blood donors and recipients using advanced compatibility matching metrics. Features robust NLP urgency classification models to parse text inputs, real-time geolocation matching searches, and highly secure role controls built with FastAPI and React.",
       highlights: [
         "Programmed intelligent AI compatibility donor-recipient matching models.",
         "Implemented NLP classification layers to categorize text-based requests by urgency parameters.",
@@ -228,18 +256,18 @@ document.addEventListener('DOMContentLoaded', () => {
       live: "https://onedrop-india.vercel.app"
     },
     skillanalyzer: {
-      title: "AI-Driven Skill Gap Analyzer & Learning Recommender",
-      tags: ["Python", "AWS", "Machine Learning", "NLP", "Full Stack"],
+      title: "SkillGap AI — Career Intelligence & Skill Gap Analyzer",
+      tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Machine Learning", "NLP", "Career Intelligence"],
       image: "assets/skillanalyzer.png",
-      description: "An AI-powered web dashboard that automates resume and job description parsing utilizing high-performance NLP algorithms. Spawns visual radar grids detailing identified technical skill gaps and feeds metrics to ML recommenders to output ranked, personalized learning paths.",
+      description: "SkillGap AI is an intelligent skill gap analysis and career roadmap platform designed to help students, developers, and engineers close their knowledge gaps. It benchmarks skill profiles against 20+ real-world tech roles, calculates instantaneous career readiness scores, maps missing competencies, and curates customized learning pathways.",
       highlights: [
-        "Trained robust NLP models mapping skill parameters from resumes and job descriptions.",
-        "Architected personalized ML ranking pathways outputting learning course recommendations.",
-        "Constructed secure API connectors deployed reliably on AWS Cloud infrastructures.",
-        "Stylized custom interactive charts and radar metrics indicators."
+        "Architected multi-role career intelligence engine benchmarking 20+ tech roles across 110+ technical competencies.",
+        "Engineered real-time Career Readiness scoring with radial progress visualization and role switching.",
+        "Built automated gap detection breaking down 'Skills You Have' vs 'Skills Missing' with personalized course links.",
+        "Implemented a fast, responsive UI built with Next.js, React, Tailwind CSS, and Lucide Icons."
       ],
       github: "https://github.com/jagadeeswarreddy919",
-      live: "https://github.com"
+      live: "https://ai-driven-skill-gap-anlyzer-and-cou.vercel.app/"
     }
   };
 
